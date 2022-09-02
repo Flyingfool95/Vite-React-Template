@@ -1,0 +1,96 @@
+$base-font-size: 20px;
+$base-line-height: 1em;
+$base-letter-spacing: 1px;
+
+$base-padding: 2rem;
+$base-padding-horizontal: 2rem;
+$base-padding-vertical: 0.5rem;
+
+$text-color-light: #efefef;
+$text-color-dark: #222;
+$background-color-light: #efefef;
+$background-color-dark: #222;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  color: $text-color-light;
+  background-color: $background-color-dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*,
+* + * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.75em 0;
+  line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
+}
+
+h1 {
+  font-size: calc($base-font-size * 3);
+}
+h2 {
+  font-size: calc($base-font-size * 2.5);
+}
+h3 {
+  font-size: calc($base-font-size * 2);
+}
+h4 {
+  font-size: calc($base-font-size * 1.5);
+}
+
+p,
+span,
+a {
+  font-size: $base-font-size;
+  max-width: 80ch;
+  line-height: calc($base-line-height * 1.33);
+  letter-spacing: $base-letter-spacing;
+}
+
+label {
+  font-size: $base-font-size;
+}
+
+input,
+textarea {
+  padding: calc($base-padding / 4);
+  font-size: $base-font-size;
+  &[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+textarea {
+  resize: vertical;
+
+  width: 100%;
+  max-width: 720px;
+  max-height: 540px;
+  min-height: 250px;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  display: grid;
+  place-items: center;
+  padding: $base-padding-vertical $base-padding-horizontal !important;
+}

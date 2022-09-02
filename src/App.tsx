@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>This is my Vite template for React</h1>
+      <h2>This is my Vite template for React</h2>
+      <h3>This is my Vite template for React</h3>
+      <h4>This is my Vite template for React</h4>
+      <p>This is my Vite template for React</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        consequuntur mollitia laboriosam maxime, alias eveniet ab culpa eos
+        inventore, minima corrupti porro sint in officiis ea facilis excepturi
+        suscipit impedit reiciendis voluptas, accusamus veniam? Soluta iusto
+        corporis consequatur rem obcaecati fugit, nesciunt quod facere minus,
+        eos animi ratione quis sequi.
       </p>
+
+      <form>
+        <div>
+          <label>I am a label</label>
+          <input type="text" name="" id="" placeholder="Name" />
+          <input type="tel" name="" id="" placeholder="Phone" />
+        </div>
+        <div>
+          <input type="checkbox" name="" id="" />
+          <input type="number" name="" id="" placeholder="Number" />
+          <input type="email" name="" id="" placeholder="Email" />
+        </div>
+        <textarea name="" id="" placeholder="Message..." />
+        <input type="button" value="Button" />
+      </form>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
