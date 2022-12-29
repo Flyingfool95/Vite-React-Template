@@ -69,6 +69,10 @@ a {
   line-height: calc($base-line-height * 1.33);
   letter-spacing: $base-letter-spacing;
   margin: 0;
+  
+  &:not(:last-of-type) {
+    margin: 0 0 1rem;
+  }
 }
 
 label {
@@ -82,7 +86,7 @@ button {
   font-size: $base-font-size;
   border-radius: 0.25rem;
   border: none;
-  &[type="checkbox"] {
+  &[type='checkbox'] {
     width: 1rem;
     height: 1rem;
   }
@@ -98,8 +102,8 @@ textarea {
 }
 
 button,
-input[type="submit"],
-input[type="button"] {
+input[type='submit'],
+input[type='button'] {
   display: grid;
   place-items: center;
   padding: $base-padding-vertical $base-padding-horizontal !important;

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './Modal.scss'
 
 /* Component - Modal */
-export default function Modal({ children, buttonText }: { children: JSX.Element, buttonText: string, animationTime: number }) {
+export default function Modal({ children, buttonText }: { children: JSX.Element, buttonText: string }) {
 
   //Client state
   const [isOpen, setIsOpen] = useState(false)
