@@ -3,29 +3,45 @@ import { useState } from 'react';
 import './Modal.scss'
 
 /* Component - Modal */
-export default function Modal({ children, buttonText }: { children: JSX.Element, buttonText: string }) {
+export default function Modal({ children, buttonText }: { children: JSX.Element, buttonText: string, animationTime: number }) {
 
   //Client state
   const [isOpen, setIsOpen] = useState(false)
+  const [classOpen, setClassOpen] = useState(false)
 
   //Functions
   const openClose = (e: any) => {
-    console.log(
-      e
-    );
 
-    if (e.target.className === "modal__content") {
-      setIsOpen(!isOpen)
+    if (e.target.className === "modal__trigger") {
+      setIsOpen(true)
+
+      setTimeout(() => {
+        setClassOpen(true)
+      }, 0);
+    }
+    if (e.target.className === "modal__content open") {
+      setClassOpen(false)
+
+      setTimeout(() => {
+        setIsOpen(false)
+      }, 150); //delay = to transition time in scss
     }
   }
 
   /* JSX */
   return (
     <div className='modal'>
-      <button onClick={() => setIsOpen(!isOpen)}>{buttonText}</button>
+
+      <button className='modal__trigger' onClick={(e) => openClose(e)}>
+        {buttonText}
+      </button>
+
       {
         isOpen &&
-        <div className="modal__content" onClick={(e) => openClose(e)}>
+        <div
+          className={`modal__content ${classOpen ? "open" : ""}`}
+          onClick={(e) => openClose(e)}
+        >
           {children}
         </div>
       }

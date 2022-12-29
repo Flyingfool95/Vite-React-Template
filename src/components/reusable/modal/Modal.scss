@@ -1,16 +1,21 @@
+$animationTime: 150ms;
+
 .modal {
   &__content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.66);
-
     display: grid;
     place-items: center;
 
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    height: 0;
+
+    transition: all $animationTime ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
     > * {
       display: flex;
       flex-direction: column;
@@ -20,6 +25,14 @@
       background-color: rgb(50, 50, 50);
       padding: 1rem 1.5rem 1.5rem;
       border-radius: 1rem;
+    }
+    &.open {
+      opacity: 1;
+      top: 0%;
+      bottom: 0%;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.66);
     }
   }
 }
