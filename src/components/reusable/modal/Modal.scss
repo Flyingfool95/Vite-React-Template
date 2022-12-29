@@ -23,13 +23,17 @@ $animationTime: 150ms;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      gap: 0rem;
+      gap: 1.2em;
+
+      overflow-y: scroll;
 
       max-width: 720px;
+      max-height: 80%;
 
       background-color: rgb(50, 50, 50);
       padding: 1rem 1.5rem 1.5rem;
       border-radius: 1rem;
+
     }
     &.open {
       opacity: 1;
