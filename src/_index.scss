@@ -43,7 +43,7 @@ h2,
 h3,
 h4 {
   color: $theme-color-2;
-  margin: 0.75em 0;
+  margin: 0 0 0.5em;
   line-height: $base-line-height;
   letter-spacing: $base-letter-spacing;
 }
@@ -68,6 +68,7 @@ a {
   max-width: 80ch;
   line-height: calc($base-line-height * 1.33);
   letter-spacing: $base-letter-spacing;
+  margin: 0;
 }
 
 label {
