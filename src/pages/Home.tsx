@@ -1,7 +1,13 @@
 import AutoModal from "../components/reusable/auto-modal/AutoModal";
 import Modal from "../components/reusable/modal/Modal";
+import useYoutube from "../hooks/useYoutube";
 
 export default function Home() {
+
+  //Hooks
+  const youtubeEmbedConverter = useYoutube()
+  console.log(youtubeEmbedConverter("https://www.youtube.com/watch?v=r3oOZsOEqJg"))
+
   return (
     <div>
       <h1>Template Vite React w/ Typescript</h1>
