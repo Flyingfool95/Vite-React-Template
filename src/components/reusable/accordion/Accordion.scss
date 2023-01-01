@@ -1,0 +1,14 @@
+$animationTime: 150ms;
+
+.accordion {
+  &__content {
+    opacity: 0;
+    transition: $animationTime ease-in-out;
+
+    &.open {
+      transition: $animationTime ease-in-out;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
