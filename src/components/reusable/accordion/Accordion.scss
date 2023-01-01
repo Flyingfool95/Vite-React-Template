@@ -1,14 +1,33 @@
 $animationTime: 150ms;
 
 .accordion {
+  &__trigger {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 100%;
+    cursor: pointer;
+  }
+
   &__content {
+    padding: 1rem;
     opacity: 0;
     transition: $animationTime ease-in-out;
+    height: 0%;
+    padding: 0 1rem;
 
+    *{
+      height: 0% !important;
+    }
+    
     &.open {
+      height: 100%;
+      padding: 1rem;
       transition: $animationTime ease-in-out;
       opacity: 1;
       background-color: rgba(0, 0, 0, 0.2);
+      *{
+        height: 100% !important;
+      }
     }
   }
 }

@@ -12,6 +12,18 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta laboriosam eius blanditiis voluptates accusantium tempora ratione ad expedita illum.</p>
       </div>
     </Accordion>
+    <Accordion triggerText="Accordion trigger">
+      <div>
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta laboriosam eius blanditiis voluptates accusantium tempora ratione ad expedita illum.</p>
+      </div>
+    </Accordion>
+    <Accordion triggerText="Accordion trigger">
+      <div>
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta laboriosam eius blanditiis voluptates accusantium tempora ratione ad expedita illum.</p>
+      </div>
+    </Accordion>
     </div>
   );
 }

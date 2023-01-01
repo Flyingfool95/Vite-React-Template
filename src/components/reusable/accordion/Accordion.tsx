@@ -18,14 +18,13 @@ export default function Accordion({ children, triggerText }: { children: JSX.Ele
         setTimeout(() => {
           setClassOpen(!classOpen)
         }, 0);
-
       }
+      
       if (isOpen) {
         setClassOpen(!classOpen)
         setTimeout(() => {
           setIsOpen(!isOpen)
-        }, 150);
-
+        }, 50);
       }
 
     }
