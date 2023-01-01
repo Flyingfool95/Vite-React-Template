@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <h1>Template Vite React w/ Typescript</h1>
 
-    
+
     </div>
   );
 }
