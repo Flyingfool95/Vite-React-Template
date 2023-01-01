@@ -1,4 +1,3 @@
-import Slider from "../components/reusable/slider/Slider";
 
 export default function Home() {
 
