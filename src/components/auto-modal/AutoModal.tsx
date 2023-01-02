@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import './AutoModal.scss'
 
-/* Component - Modal */
+/* Component - Auto modal */
 export default function AutoModal({ children, modalRef }: { children: JSX.Element, modalRef: string }) {
 
   //Client state

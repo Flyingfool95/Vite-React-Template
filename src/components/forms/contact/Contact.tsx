@@ -15,7 +15,7 @@ export default function Contact() {
     console.log(`Sending email to: ${email} - ${name}. Saying: ${message}`);
   }
 
-  //JSX
+  /* JSX */
   return (
     <form className="contact-form" onSubmit={(e) => sendEmail(e)}>
       <label>
