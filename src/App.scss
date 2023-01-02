@@ -1,23 +1,8 @@
-@use "index";
+@use 'index';
 
 .App {
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: index.$base-padding;
-
-  form {
-    max-width: 540px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-
-    > div {
-      flex-basis: 40%;
-      flex-grow: 1;
-      display: flex;
-      gap: 0.5rem;
-      flex-direction: column;
-    }
-  }
 }
