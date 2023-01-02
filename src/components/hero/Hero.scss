@@ -1,0 +1,17 @@
+.hero {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  max-width: 100vw;
+
+  background-color: red;
+  height: 250px;
+
+  display: flex;
+  justify-content: start;
+  align-items: end;
+
+  &__content {
+    max-width: 720px;
+    padding: 2rem;
+  }
+}
