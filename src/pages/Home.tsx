@@ -1,5 +1,3 @@
-import Contact from "../components/forms/contact/Contact";
-
 export default function Home() {
 
   return (
